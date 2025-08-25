@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   body{
+    display: flex;
+     margin: 0;
+    justify-content: center;
+    align-items: center; /* top align instead of center */
+    padding-top: 45px;
+    height: auto;
+    background-color: #6c6262;
+            font-family: Arial, sans-serif;
+                /* 🌍 Background world map */
+      
+}
+        .container {
+            background: white;
+            padding: 100px;
+            border-radius: 40px;
+            box-shadow: 0px 4px 10px rgba(11, 52, 236, 0.1);
+            width: 300px;
+            text-align: center;
+            background: #12251e;
+            color: antiquewhite;
+            font-size:x-large;
+            border: 3px solid antiquewhite;
+
+        }
+        .self-conta {
+            
+            margin-bottom: 20px;
+            padding: 10px;
+            
+        }
+        
+
+        select, input {
+           
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+    max-height: 150px; /* limit visible area */
+    overflow-y: auto;  /* enable scrolling */
+}
+
+            
+        
+        h4{
+           
+            padding:30px;
+        }
+        button{
+            font-size:small;
+            font-weight: 900;
+            background-color: bisque;
+            border: 4px  solid black;
+            padding: 14px;
+            border-radius: 20px;
+        }
+        .dropdown{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        h2{
+            font-size:large;
+            padding-bottom:20px;
+        }
+        .Amount,p{
+            margin-bottom: 20px;
+        }
+        
+        
+        
+    
+    
+</style>
+<body> <div class="container">
+    <h2>CURRENCY CONVERTER</h2>
+
+    <form>
+    <div class="Amount">
+      <p>Enter amount</p>
+      <input value="1" type="text"/>
+
+<div class="dropdown">
+<div class="self-conta">
+<div class="from">
+    <p>from</p>
+    <img src="https://flagsapi.com/US/flat/64.png">
+    <select name="from">
+
+</select>
+
+</div>
+</div>
+<div class="to">
+<div class="self-conta">
+
+    <p>to</p>
+    <img src="https://flagsapi.com/IN/flat/64.png" >
+    <select name="to">
+
+</select>
+</div>
+</div>
+</div>
+<div class="msg">
+<h4>1 usd=87.029 inr</h4>
+</div>
+<button>GET EXCHANGE RATE </button>
+ <button type="button" id="refreshBtn">REFRESH</button>
+</div>
+</div>
+</form>
+
+
+
+<script src="code.js"></script>
+</body>
+</html>
